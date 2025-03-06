@@ -55,5 +55,13 @@ public class CatalogoLivros {
         return livroPorTitulo;
     }
 
+        public static void main(String[] args) {
+            CatalogoLivros catalogoLivros = new CatalogoLivros();
+            catalogoLivros.adicionarLivro("L1", "a1", 2020);
+            catalogoLivros.adicionarLivro("L2", "a1", 2015);
+            catalogoLivros.adicionarLivro("L3", "a5", 2020);
+            
+            System.out.println(catalogoLivros.pesquisarPorAutor("a1"));
+        }
 
 }
